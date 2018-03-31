@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Quiz_app</string>
+    <string name="correct1">It has all the information about an application</string>
+    <string name="correct4">Android is a stack of software\'s for mobility</string>
+    <string name="correct7">Yes,it\'s possible</string>
+    <string name="correct10">log cat contains the exception name along with the line number</string>
+    <string name="correct83">AutoCompleteTextView</string>
+    <string name="correct82">DatePicker</string>
+    <string name="correct8">AutoCompleteTextView and DatePicker</string>
+    <string name="correct2">align in single direction</string>
+    <string name="correct3">android:layout_weight</string>
+    <string name="correct5">android:baselineAligned</string>
+    <string name="correct6">Activities</string>
+    <string name="correct9">Android Debug Bridge</string>
+    <string name="done">Done</string>
+    <string name="general_instruction"><u>General Instruction</u></string>
+    <string name="guid1">All questions are compulsory</string>
+    <string name="quid2">Time give will be one minute</string>
+    <string name="quid3">There are 10 Questions</string>
+    <string name="quid4">There are four MCQ each one Marks</string>
+    <string name="guid5">There is 3 one word answer each 2 Marks</string>
+    <string name="guid6">There is one Multiple correct answer of 3 Marks</string>
+    <string name="guid7">Partial making is not applicable</string>
+    <string name="guid8">The test will automatically end 1 minute after the start button is clicked</string>
+    <string name="guid10">There is no Negative marking for incorrect questions</string>
+    <string name="start_test">Start Test</string>
+    <string name="time">00:00</string>
+    <string name="play_and_pause_time">Play and pause time</string>
+    <string name="que_num_1">Q1</string>
+    <string name="Q1">What is Manifest.xml in android?</string>
+    <string name="one_opt_1">It has information about layout in an application</string>
+    <string name="one_opt_2">It has the information about activities in an application</string>
+    <string name="one_opt_4">None of the above</string>
+    <string name="correct_ans_disp">CORRECT :</string>
+    <string name="que_num_2">Q2</string>
+    <string name="Q2">Name Linear Layout main property?</string>
+    <string name="hint">Enter answer</string>
+    <string name="que_num_3">Q3</string>
+    <string name="Q3">How much of the extra space in the layout should be allocated to the View is decided by which layout attribute.</string>
+    <string name="que_num_4">Q4</string>
+    <string name="Q4">What is Android?</string>
+    <string name="ten_opt_4">None of the above</string>
+    <string name="ten_opt_3">Google search</string>
+    <string name="ten_opt_1">Checking whole code</string>
+    <string name="Q10">How to fix crash using log cat in android?</string>
+    <string name="que_num_10">Q10</string>
+    <string name="Q9">What is full form of ADB</string>
+    <string name="que_num_9">Q9</string>
+    <string name="eight_check_4">LineView</string>
+    <string name="eight_check_1">GridView</string>
+    <string name="multi_type">Multiple Correct</string>
+    <string name="Q8">Which of following is UI Controls</string>
+    <string name="que_num_8">Q8</string>
+    <string name="seven_opt_4">None of the above</string>
+    <string name="seven_opt_3">We can\'t say</string>
+    <string name="seven_opt_1">No, it\'s not possible</string>
+    <string name="Q7">Is it possible activity without UI in android?</string>
+    <string name="que_num_7">Q7</string>
+    <string name="Q6">Which activity component dictate the UI and handle the user interaction to the smart phone screen.</string>
+    <string name="que_num_6">Q6</string>
+    <string name="Q5">Which is not a Relative Layout attributes ?</string>
+    <string name="que_num_5">Q5</string>
+    <string name="four_opt_4">None of the above</string>
+    <string name="fout_opt_3">A Software</string>
+    <string name="fout_opt_1">Virtual machine</string>
+    <string name="next">Next</string>
+    <string name="email_example">you@example.com</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="name_example">android</string>
+    <string name="Title">Lets Start Quiz</string>
+    <string name="enter_name">Enter name</string>
+
+
+    <string-array name="Spinner1">
+
+        <item>Select Item</item>
+        <item>android:layout_gravity</item>
+        <item>android:gravity</item>
+        <item>android:layout_weight</item>
+        <item>android:foregroundGravity</item>
+
+    </string-array>
+
+    <string-array name="Spinner2">
+
+        <item>Select Item</item>
+        <item>android:id</item>
+        <item>android:gravity</item>
+        <item>android:baselineAligned</item>
+        <item>android:ignoreGravity</item>
+
+    </string-array>
+
+</resources>
