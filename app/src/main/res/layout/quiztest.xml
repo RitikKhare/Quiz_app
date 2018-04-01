@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E0E0E0"
@@ -71,8 +72,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:layout_marginRight="@dimen/Margin"
                     android:layout_marginTop="30dp"
                     android:alpha="0.9"
                     android:background="#FFFFFF"
@@ -94,7 +95,7 @@
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="@dimen/Margin"
                             android:text="@string/Q1"
                             android:textColor="#000000"
                             android:textSize="21sp" />
@@ -169,7 +170,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="@dimen/Margin"
                         android:text=""
                         android:textStyle="italic|bold"
                         android:textColor="#000000"/>
@@ -179,8 +180,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:layout_marginRight="@dimen/Margin"
                     android:layout_marginTop="30dp"
                     android:alpha="0.9"
                     android:background="#FFFFFF"
@@ -202,7 +203,7 @@
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="@dimen/Margin"
                             android:text="@string/Q2"
                             android:textColor="#000000"
                             android:textSize="21sp" />
@@ -215,7 +216,8 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
                         android:hint="@string/hint"
-                        android:scrollbars="vertical" />
+                        android:scrollbars="vertical"
+                        android:inputType="text" />
 
                     <LinearLayout
                         android:visibility="gone"
@@ -248,7 +250,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="@dimen/Margin"
                         android:text=""
                         android:textStyle="italic|bold"
                         android:textColor="#000000"/>
@@ -259,8 +261,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:layout_marginRight="@dimen/Margin"
                     android:layout_marginTop="30dp"
                     android:alpha="0.9"
                     android:background="#FFFFFF"
@@ -282,7 +284,7 @@
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="@dimen/Margin"
                             android:text="@string/Q3"
                             android:textColor="#000000"
                             android:textSize="21sp" />
@@ -327,7 +329,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="@dimen/Margin"
                         android:text=""
                         android:textStyle="italic|bold"
                         android:textColor="#000000"/>
@@ -337,8 +339,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:layout_marginRight="@dimen/Margin"
                     android:layout_marginTop="30dp"
                     android:alpha="0.9"
                     android:background="#FFFFFF"
@@ -360,7 +362,7 @@
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="@dimen/Margin"
                             android:text="@string/Q4"
                             android:textColor="#000000"
                             android:textSize="21sp" />
@@ -436,7 +438,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="@dimen/Margin"
                         android:text=""
                         android:textStyle="italic|bold"
                         android:textColor="#000000"/>
@@ -447,8 +449,8 @@
                     android:id="@+id/Spinner_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:layout_marginRight="@dimen/Margin"
                     android:layout_marginTop="30dp"
                     android:background="#FFFFFF"
                     android:alpha="0.9"
@@ -470,7 +472,7 @@
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="@dimen/Margin"
                             android:text="@string/Q5"
                             android:textColor="#000000"
                             android:textSize="21sp" />
@@ -515,7 +517,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="@dimen/Margin"
                         android:text=""
                         android:textStyle="italic|bold"
                         android:textColor="#000000"/>
@@ -525,8 +527,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:layout_marginRight="@dimen/Margin"
                     android:layout_marginTop="30dp"
                     android:background="#FFFFFF"
                     android:alpha="0.9"
@@ -548,7 +550,7 @@
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="@dimen/Margin"
                             android:text="@string/Q6"
                             android:textColor="#000000"
                             android:textSize="21sp" />
@@ -560,7 +562,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
-                        android:hint="@string/hint" />
+                        android:hint="@string/hint"
+                        android:inputType="text" />
 
                     <LinearLayout
                         android:id="@+id/C6"
@@ -594,7 +597,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="@dimen/Margin"
                         android:text=""
                         android:textStyle="italic|bold"
                         android:textColor="#000000"/>
@@ -606,8 +609,8 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:layout_marginRight="@dimen/Margin"
                     android:layout_marginTop="30dp"
                     android:background="#FFFFFF"
                     android:alpha="0.9"
@@ -629,7 +632,7 @@
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="@dimen/Margin"
                             android:text="@string/Q7"
                             android:textColor="#000000"
                             android:textSize="21sp" />
@@ -678,7 +681,8 @@
                         android:visibility="gone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        tools:ignore="TooManyViews">
 
                         <TextView
                             android:visibility="visible"
@@ -705,7 +709,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="@dimen/Margin"
                         android:text=""
                         android:textStyle="italic|bold"
                         android:textColor="#000000"/>
@@ -716,8 +720,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:alpha="0.9"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:layout_marginRight="@dimen/Margin"
                     android:layout_marginTop="30dp"
                     android:background="#FFFFFF"
                     android:orientation="vertical">
@@ -737,7 +741,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="@dimen/Margin"
                             android:text="@string/Q8"
                             android:textColor="#000000"
                             android:textSize="21sp"
@@ -829,7 +833,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="@dimen/Margin"
                         android:text=""
                         android:textStyle="italic|bold"
                         android:textColor="#000000"/>
@@ -840,8 +844,8 @@
                     android:alpha="0.9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:layout_marginRight="@dimen/Margin"
                     android:layout_marginTop="30dp"
                     android:background="#FFFFFF"
                     android:orientation="vertical">
@@ -862,7 +866,7 @@
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="@dimen/Margin"
                             android:text="@string/Q9"
                             android:textColor="#000000"
                             android:textSize="21sp" />
@@ -875,7 +879,8 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
                         android:hint="@string/hint"
-                        android:scrollbars="vertical" />
+                        android:scrollbars="vertical"
+                        android:inputType="text" />
 
                     <LinearLayout
                         android:id="@+id/C9"
@@ -909,7 +914,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="@dimen/Margin"
                         android:text=""
                         android:textStyle="italic|bold"
                         android:textColor="#000000"/>
@@ -920,8 +925,8 @@
                     android:alpha="0.9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:layout_marginRight="@dimen/Margin"
                     android:layout_marginTop="30dp"
                     android:layout_marginBottom="30dp"
                     android:background="#FFFFFF"
@@ -943,7 +948,7 @@
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="@dimen/Margin"
                             android:text="@string/Q10"
                             android:textColor="#000000"
                             android:textSize="21sp" />
@@ -955,7 +960,7 @@
                         android:layout_margin="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="10dp">
+                        android:layout_marginEnd="@dimen/Margin">
 
                         <RadioButton
                             android:id="@+id/fourradio1"
@@ -1019,7 +1024,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="40dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="@dimen/Margin"
                         android:text=""
                         android:textStyle="italic|bold"
                         android:textColor="#000000"/>

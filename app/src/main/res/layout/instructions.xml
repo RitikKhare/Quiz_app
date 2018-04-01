@@ -23,73 +23,110 @@
                 android:gravity="center"
                 android:text="@string/general_instruction"
                 android:textColor="#000000"
-                android:textSize="34sp"
+                android:textSize="@dimen/HeadingSize"
                 android:textStyle="italic|bold" />
 
             <View
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
                 android:background="@android:color/darker_gray"/>
 
             <TextView
+                android:textSize="@dimen/DefaultTextSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/Margin"
                 android:text="@string/guid1" />
 
             <TextView
+                android:textSize="@dimen/DefaultTextSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/Margin"
                 android:text="@string/quid2" />
 
             <TextView
+                android:textSize="@dimen/DefaultTextSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/Margin"
                 android:text="@string/quid3" />
 
             <TextView
+                android:textSize="@dimen/DefaultTextSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/Margin"
                 android:text="@string/quid4" />
 
             <TextView
+                android:textSize="@dimen/DefaultTextSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/Margin"
                 android:text="@string/guid5" />
 
             <TextView
+                android:textSize="@dimen/DefaultTextSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/Margin"
                 android:text="@string/guid6" />
 
             <TextView
+                android:textSize="@dimen/DefaultTextSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/Margin"
                 android:text="@string/guid7" />
 
             <TextView
+                android:textSize="@dimen/DefaultTextSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/Margin"
                 android:text="@string/guid8" />
 
             <TextView
+                android:textSize="@dimen/DefaultTextSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/Margin"
                 android:text="@string/guid10" />
+
+            <TextView
+                android:textSize="@dimen/DefaultTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Margin"
+                android:text="@string/quide11"/>
+
+            <TextView
+                android:textSize="@dimen/DefaultTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Margin"
+                android:text="@string/quide12"/>
+
+            <TextView
+                android:textSize="@dimen/DefaultTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Margin"
+                android:text="@string/quide13"/>
+
+            <TextView
+                android:textSize="@dimen/DefaultTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Margin"
+                android:text="@string/guide14"/>
 
             <Button
                 android:id="@+id/start"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#4CAF50"
+                android:background="@color/ButtonColor"
                 android:layout_margin="15dp"
                 android:layout_gravity ="center"
                 android:text="@string/start_test" />

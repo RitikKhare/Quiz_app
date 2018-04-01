@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.Menu;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
@@ -21,8 +20,6 @@ import java.util.regex.Pattern;
 public class MainActivity extends AppCompatActivity {
 
     SharedPreferences pref;
-
-    private boolean val = false;
 
     private Toast toast;
 
@@ -64,8 +61,7 @@ public class MainActivity extends AppCompatActivity {
         email.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_DONE);
-                {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
                     login();
                 }
                 return false;
@@ -85,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static boolean isEmailValid(String email) {
-        String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
+        String expression = "^[\\w\\-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
         Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();

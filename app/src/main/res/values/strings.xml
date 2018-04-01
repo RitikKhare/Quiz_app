@@ -1,18 +1,87 @@
 <resources>
+
     <string name="app_name">Quiz_app</string>
-    <string name="correct1">It has all the information about an application</string>
-    <string name="correct4">Android is a stack of software\'s for mobility</string>
-    <string name="correct7">Yes,it\'s possible</string>
-    <string name="correct10">log cat contains the exception name along with the line number</string>
-    <string name="correct83">AutoCompleteTextView</string>
-    <string name="correct82">DatePicker</string>
-    <string name="correct8">AutoCompleteTextView and DatePicker</string>
-    <string name="correct2">align in single direction</string>
-    <string name="correct3">android:layout_weight</string>
-    <string name="correct5">android:baselineAligned</string>
-    <string name="correct6">Activities</string>
-    <string name="correct9">Android Debug Bridge</string>
-    <string name="done">Done</string>
+
+    <!--Question 1 Data-->
+    <!--Single Correct-->
+    <string name="Q1">What is Manifest.xml in android?</string>
+    <string name="correct1">It has all the information about an application</string>    <!--Correst answer-->
+    <string name="one_opt_1">It has information about layout in an application</string>
+    <string name="one_opt_2">It has the information about activities in an application</string>
+    <string name="one_opt_4">None of the above</string>
+
+    <!--Question 4 Data-->
+    <!--Single Correct-->
+    <string name="Q4">What is Android?</string>
+    <string name="correct4">Android is a stack of software\'s for mobility</string>     <!--Correst answer-->
+    <string name="four_opt_4">None of the above</string>
+    <string name="fout_opt_3">A Software</string>
+    <string name="fout_opt_1">Virtual machine</string>
+
+    <!--Question 7 Data-->
+    <string name="Q7">Is it possible activity without UI in android?</string>
+    <string name="correct7">Yes,it\'s possible</string> <!--Correst answer-->
+    <string name="seven_opt_4">None of the above</string>
+    <string name="seven_opt_3">We can\'t say</string>
+    <string name="seven_opt_1">No, it\'s not possible</string>
+
+    <!--Question 10 Data-->
+    <!--Single Correct-->
+    <string name="Q10">How to fix crash using log cat in android?</string>
+    <string name="correct10">log cat contains the exception name along with the line number</string>    <!--Correst answer-->
+    <string name="ten_opt_4">None of the above</string>
+    <string name="ten_opt_3">Google search</string>
+    <string name="ten_opt_1">Checking whole code</string>
+
+    <!--Question 8 Data-->
+    <!--Multiple Correct-->
+    <string name="Q8">Which of following is UI Controls</string>
+    <string name="correct8">AutoCompleteTextView and DatePicker</string>        <!--Correst answer-->
+    <string name="correct83">AutoCompleteTextView</string>                <!--Correct Option-->
+    <string name="correct82">DatePicker</string>                          <!--Correct Option-->
+    <string name="eight_check_4">LineView</string>
+    <string name="eight_check_1">GridView</string>
+
+    <!--Question 2 Data-->
+    <!--String Type user need to type answer-->
+    <string name="Q2">Name Linear Layout main property?</string>
+    <string name="correct2">align in single direction</string>      <!--Correst answer-->
+
+    <!--Question 3 Data-->
+    <!--Spinner type user need to select answer from spinner-->
+    <string name="Q3">How much of the extra space in the layout should be allocated to the View is decided by which layout attribute.</string>
+    <string name="correct3">android:layout_weight</string> <!--Correst answer-->
+    <string-array name="spinnerQ3">
+        <item>Select Item</item>
+        <item>android:layout_gravity</item>
+        <item>android:gravity</item>
+        <item>android:layout_weight</item>
+        <item>android:foregroundGravity</item>
+    </string-array>
+
+    <!--Question 5 Data-->
+    <!--Spinner type user need to select answer from spinner-->
+    <string name="Q5">Which is not a Relative Layout attributes ?</string>
+    <string name="correct5">android:baselineAligned</string>    <!--Correst answer-->
+    <string-array name="spinnerQ5">
+        <item>Select Item</item>
+        <item>android:id</item>
+        <item>android:gravity</item>
+        <item>android:baselineAligned</item>
+        <item>android:ignoreGravity</item>
+    </string-array>
+
+    <!--Question 6 Data-->
+    <!--String Type user need to type answer-->
+    <string name="Q6">Which activity component dictate the UI and handle the user interaction to the smart phone screen.</string>
+    <string name="correctedit6">Activities</string>     <!--Correst answer-->
+
+    <!--Question 9 Data-->
+    <!--String Type user need to type answer-->
+    <string name="Q9">What is full form of ADB</string>
+    <string name="correctedit9">Android Debug Bridge</string>   <!--Correst answer-->
+
+    <!--intructions activity resources-->
     <string name="general_instruction"><u>General Instruction</u></string>
     <string name="guid1">All questions are compulsory</string>
     <string name="quid2">Time give will be one minute</string>
@@ -23,72 +92,41 @@
     <string name="guid7">Partial making is not applicable</string>
     <string name="guid8">The test will automatically end 1 minute after the start button is clicked</string>
     <string name="guid10">There is no Negative marking for incorrect questions</string>
+
+    <!--others string resources-->
+    <string name="done">Done</string>
     <string name="start_test">Start Test</string>
     <string name="time">00:00</string>
     <string name="play_and_pause_time">Play and pause time</string>
-    <string name="que_num_1">Q1</string>
-    <string name="Q1">What is Manifest.xml in android?</string>
-    <string name="one_opt_1">It has information about layout in an application</string>
-    <string name="one_opt_2">It has the information about activities in an application</string>
-    <string name="one_opt_4">None of the above</string>
     <string name="correct_ans_disp">CORRECT :</string>
-    <string name="que_num_2">Q2</string>
-    <string name="Q2">Name Linear Layout main property?</string>
     <string name="hint">Enter answer</string>
-    <string name="que_num_3">Q3</string>
-    <string name="Q3">How much of the extra space in the layout should be allocated to the View is decided by which layout attribute.</string>
-    <string name="que_num_4">Q4</string>
-    <string name="Q4">What is Android?</string>
-    <string name="ten_opt_4">None of the above</string>
-    <string name="ten_opt_3">Google search</string>
-    <string name="ten_opt_1">Checking whole code</string>
-    <string name="Q10">How to fix crash using log cat in android?</string>
-    <string name="que_num_10">Q10</string>
-    <string name="Q9">What is full form of ADB</string>
-    <string name="que_num_9">Q9</string>
-    <string name="eight_check_4">LineView</string>
-    <string name="eight_check_1">GridView</string>
     <string name="multi_type">Multiple Correct</string>
-    <string name="Q8">Which of following is UI Controls</string>
-    <string name="que_num_8">Q8</string>
-    <string name="seven_opt_4">None of the above</string>
-    <string name="seven_opt_3">We can\'t say</string>
-    <string name="seven_opt_1">No, it\'s not possible</string>
-    <string name="Q7">Is it possible activity without UI in android?</string>
-    <string name="que_num_7">Q7</string>
-    <string name="Q6">Which activity component dictate the UI and handle the user interaction to the smart phone screen.</string>
-    <string name="que_num_6">Q6</string>
-    <string name="Q5">Which is not a Relative Layout attributes ?</string>
-    <string name="que_num_5">Q5</string>
-    <string name="four_opt_4">None of the above</string>
-    <string name="fout_opt_3">A Software</string>
-    <string name="fout_opt_1">Virtual machine</string>
     <string name="next">Next</string>
     <string name="email_example">you@example.com</string>
     <string name="enter_email_address">Enter Email Address</string>
     <string name="name_example">android</string>
     <string name="Title">Lets Start Quiz</string>
     <string name="enter_name">Enter name</string>
+    <string name="ans_status">Answer Status</string>
+    <string name="marked_review">Marked for review</string>
+    <string name="not_attempted">Not Attempted</string>
+    <string name="attempted">Attempted</string>
 
 
-    <string-array name="Spinner1">
-
-        <item>Select Item</item>
-        <item>android:layout_gravity</item>
-        <item>android:gravity</item>
-        <item>android:layout_weight</item>
-        <item>android:foregroundGravity</item>
-
-    </string-array>
-
-    <string-array name="Spinner2">
-
-        <item>Select Item</item>
-        <item>android:id</item>
-        <item>android:gravity</item>
-        <item>android:baselineAligned</item>
-        <item>android:ignoreGravity</item>
-
-    </string-array>
+    <!--Question number resource-->
+    <string name="que_num_1">Q1</string>
+    <string name="que_num_2">Q2</string>
+    <string name="que_num_3">Q3</string>
+    <string name="que_num_4">Q4</string>
+    <string name="que_num_10">Q10</string>
+    <string name="que_num_9">Q9</string>
+    <string name="que_num_8">Q8</string>
+    <string name="que_num_7">Q7</string>
+    <string name="que_num_6">Q6</string>
+    <string name="que_num_5">Q5</string>
+    <string name="quide12">Click thick icon to summit the quiz</string>
+    <string name="quide13">Click pause icon will make visible the summit icon(thick icon</string>
+    <string name="quide11">Click play icon to start the quiz</string>
+    <string name="guide14">The Questions will be visible only when the timer is running</string>
 
 </resources>

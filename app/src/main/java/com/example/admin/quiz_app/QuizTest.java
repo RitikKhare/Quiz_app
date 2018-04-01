@@ -9,7 +9,6 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -73,7 +72,7 @@ public class QuizTest extends AppCompatActivity {
         setContentView(R.layout.quiztest);
 
         spinner1 = findViewById(R.id.spinner1);
-        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.Spinner1,android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.spinnerQ3,android.R.layout.simple_spinner_item);
 
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(adapter1);
@@ -91,7 +90,7 @@ public class QuizTest extends AppCompatActivity {
         });
 
         spinner2 = findViewById(R.id.spinner2);
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.Spinner2,android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.spinnerQ5,android.R.layout.simple_spinner_item);
 
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(adapter2);
@@ -509,12 +508,12 @@ public class QuizTest extends AppCompatActivity {
         }
 
         if (A6.getText() == at) {
-            if(Q6.getText().toString().matches( getString(R.string.correct6))){
+            if(Q6.getText().toString().matches( getString(R.string.correctedit6))){
                 totalMarks += 2;
                 A6.setText(c);
             }else {
                 dc6.setVisibility(View.VISIBLE);
-                c6.setText(R.string.correct6);
+                c6.setText(R.string.correctedit6);
             }
         }
         if (A7.getText() == at) {
@@ -536,12 +535,12 @@ public class QuizTest extends AppCompatActivity {
             }
         }
         if (A9.getText() == at) {
-            if(Q9.getText().toString().matches(getString(R.string.correct9))){
+            if(Q9.getText().toString().matches(getString(R.string.correctedit9))){
                 totalMarks += 2;
                 A9.setText(c);
             }else {
                 dc9.setVisibility(View.VISIBLE);
-                c9.setText(R.string.correct9);
+                c9.setText(R.string.correctedit9);
             }
         }
         if (A10.getText() == at) {
@@ -615,13 +614,13 @@ public class QuizTest extends AppCompatActivity {
         if (!TextUtils.isEmpty(Q6.getText().toString().trim())) {
             A6.setText(at);
         } else {
-            c6.setText(R.string.correct6);
+            c6.setText(R.string.correctedit6);
         }
 
         if (!TextUtils.isEmpty(Q9.getText().toString().trim())) {
             A9.setText(at);
         } else {
-            c9.setText(R.string.correct9);
+            c9.setText(R.string.correctedit9);
         }
 
         if (Q81.isChecked() || Q82.isChecked() || Q83.isChecked() || Q84.isChecked()) {
