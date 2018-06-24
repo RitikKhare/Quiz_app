@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="NormalMargin">10dp</dimen>
+    <dimen name="headingTextSize">24sp</dimen>
+    <dimen name="defaultTextSize">18sp</dimen>
+    <dimen name="titleTextSize">48sp</dimen>
+
+</resources>

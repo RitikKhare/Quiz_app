@@ -1,6 +1,5 @@
 package com.example.admin.quiz_app;
 
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
@@ -13,19 +12,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-
 public class MainActivity extends AppCompatActivity {
 
     SharedPreferences pref;
 
-    private Toast toast;
+    private String stringName;
 
-    private String Name;
-
-    private String Email;
+    private String stringEmail;
 
     private EditText name ;
 
@@ -58,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        email.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        email.setOnEditorActionListener(new EditText.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
@@ -67,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
     }
 
     @Override
@@ -75,44 +67,43 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
 
         SharedPreferences.Editor prefEditor = pref.edit();
-        prefEditor.putString("Name" , Name);
-        prefEditor.putString("Email" , Email);
+        prefEditor.putString("Name", stringName);
+        prefEditor.putString("Email", stringEmail);
         prefEditor.apply();
     }
 
-    public static boolean isEmailValid(String email) {
-        String expression = "^[\\w\\-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
-        Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher(email);
-        return matcher.matches();
-    }
-
-    void showToast (String message) {
-
-        if (toast != null) {
-            toast.cancel();
-        }
-
-        toast = Toast.makeText(this, message , Toast.LENGTH_SHORT);
-        toast.show();
-    }
-
     void login () {
-        Name = name.getEditableText().toString();
-        Email = email.getEditableText().toString();
+        stringName = name.getEditableText().toString().toLowerCase();
+        stringEmail = email.getEditableText().toString().toLowerCase();
 
-        if (Name.isEmpty() && Email.isEmpty()) {
-            showToast ("Please fill above fields");
-        } else if (Name.isEmpty()) {
-            showToast ("Name can not be empty");
-        } else if  (Email.isEmpty() ) {
-            showToast ("Email address can not empty");
-        }else if (!isEmailValid(Email)){
-            showToast ("Please enter Valid Email");
+        if (stringName.isEmpty() && stringEmail.isEmpty()) {
+            email.setError("Email can not be empty");
+            name.setError("Name can not be empty");
+        } else if (stringName.isEmpty()) {
+            name.setError("Name can not be empty");
+        } else if (stringEmail.isEmpty()) {
+            email.setError("Email can not be empty");
+        } else if (isInvalidEmail(stringEmail)) {
+            email.setError("Invalid Email");
         }else {
             Intent intent = new Intent(MainActivity.this , Instructions.class);
             startActivity(intent);
         }
     }
 
+    boolean isInvalidEmail(String email) {
+        boolean returnVal = true;
+        int atTheRateIndex = email.lastIndexOf("@");
+
+        if (email.contains("@")) {
+            if (atTheRateIndex > 0) {
+                if (email.lastIndexOf(".") > atTheRateIndex + 1) {
+                    if (!email.endsWith(",")) {
+                        returnVal = false;
+                    }
+                }
+            }
+        }
+        return returnVal;
+    }
 }

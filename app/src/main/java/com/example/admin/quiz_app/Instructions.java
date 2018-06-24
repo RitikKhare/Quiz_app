@@ -7,10 +7,13 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Instructions extends AppCompatActivity{
 
     private Intent intent;
+
+    private Toast toast;
 
     public QuizTest test = new QuizTest();
 
@@ -26,7 +29,10 @@ public class Instructions extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.instructions);
 
+        showToast("Read The Instruction Carefully");
+
         TextView start = findViewById(R.id.start);
+
 
         start.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +66,16 @@ public class Instructions extends AppCompatActivity{
 
         alert.create();
         alert.show();
+    }
+
+    void showToast(String message) {
+
+        if (toast != null) {
+            toast.cancel();
+        }
+
+        toast = Toast.makeText(this, message, Toast.LENGTH_SHORT);
+        toast.show();
     }
 
 }

@@ -12,14 +12,15 @@
         android:allowBackup="false"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".QuizTest">
+        <activity
+            android:name=".QuizTest"
+            android:theme="@style/AppTheme.NoActionBar">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -35,6 +36,10 @@
                 android:value=".MainActivity"/>
 
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
     </application>
 
